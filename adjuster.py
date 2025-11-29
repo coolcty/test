@@ -77,6 +77,9 @@ class LearningAdjuster:
                 stats.get("total_hours_studied", 0) + hours_spent
             )
 
+        # Update completion rate
+        self._update_completion_rate(stats)
+
         # Update streak
         self._update_streak()
 
@@ -122,6 +125,34 @@ class LearningAdjuster:
 
         self.progress["overall_stats"] = stats
 
+    def _update_completion_rate(self, stats):
+        """Calculate and update the completion rate based on scheduled vs completed tasks."""
+        daily_log = self.progress.get("daily_log", [])
+
+        # Calculate total scheduled tasks per week
+        total_scheduled_per_week = sum(
+            len(day_data.get("tasks", []))
+            for day_data in self.schedule.get("daily_tasks", {}).values()
+        )
+
+        if total_scheduled_per_week == 0:
+            return
+
+        # Get days since start
+        start_date = self.progress.get("start_date")
+        if start_date:
+            start = datetime.strptime(start_date, "%Y-%m-%d").date()
+            days_elapsed = (datetime.now().date() - start).days + 1
+            weeks_elapsed = max(1, days_elapsed / 7)
+
+            # Calculate expected tasks based on time elapsed
+            expected_tasks = int(total_scheduled_per_week * weeks_elapsed)
+            completed_tasks = stats.get("total_tasks_completed", 0)
+
+            if expected_tasks > 0:
+                completion_rate = min(100, (completed_tasks / expected_tasks) * 100)
+                stats["completion_rate_percent"] = round(completion_rate, 1)
+
     def get_recommendations(self):
         """Generate learning recommendations based on progress analysis."""
         stats = self.progress.get("overall_stats", {})
@@ -129,7 +160,7 @@ class LearningAdjuster:
 
         # Analyze completion rate
         completion_rate = stats.get("completion_rate_percent", 0)
-        if completion_rate < 50:
+        if completion_rate < 70:
             recommendations.append(
                 {
                     "type": "workload",
