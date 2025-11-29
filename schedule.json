@@ -1,0 +1,166 @@
+{
+  "schedule_version": "1.0",
+  "created_date": "2025-11-29",
+  "weekly_hours_target": 20,
+  "daily_tasks": {
+    "monday": {
+      "focus": "theory",
+      "tasks": [
+        {
+          "id": "mon-1",
+          "topic": "Mathematical Foundations",
+          "description": "Study convex optimization concepts",
+          "duration_minutes": 90,
+          "priority": "high",
+          "resources": ["lecture_notes", "textbook_ch3"]
+        },
+        {
+          "id": "mon-2",
+          "topic": "Mathematical Foundations",
+          "description": "Practice optimization problems",
+          "duration_minutes": 60,
+          "priority": "medium",
+          "resources": ["problem_set_1"]
+        }
+      ]
+    },
+    "tuesday": {
+      "focus": "implementation",
+      "tasks": [
+        {
+          "id": "tue-1",
+          "topic": "Machine Learning",
+          "description": "Implement gradient descent from scratch",
+          "duration_minutes": 120,
+          "priority": "high",
+          "resources": ["coding_tutorial"]
+        },
+        {
+          "id": "tue-2",
+          "topic": "Machine Learning",
+          "description": "Review statistical learning theory",
+          "duration_minutes": 45,
+          "priority": "medium",
+          "resources": ["lecture_video"]
+        }
+      ]
+    },
+    "wednesday": {
+      "focus": "theory",
+      "tasks": [
+        {
+          "id": "wed-1",
+          "topic": "Deep Learning",
+          "description": "Study neural network architectures",
+          "duration_minutes": 90,
+          "priority": "high",
+          "resources": ["deep_learning_book_ch6"]
+        },
+        {
+          "id": "wed-2",
+          "topic": "Deep Learning",
+          "description": "Understand backpropagation derivation",
+          "duration_minutes": 60,
+          "priority": "high",
+          "resources": ["lecture_notes"]
+        }
+      ]
+    },
+    "thursday": {
+      "focus": "implementation",
+      "tasks": [
+        {
+          "id": "thu-1",
+          "topic": "Deep Learning",
+          "description": "Implement CNN for image classification",
+          "duration_minutes": 120,
+          "priority": "high",
+          "resources": ["pytorch_tutorial"]
+        },
+        {
+          "id": "thu-2",
+          "topic": "Projects",
+          "description": "Work on course project",
+          "duration_minutes": 60,
+          "priority": "medium",
+          "resources": ["project_guidelines"]
+        }
+      ]
+    },
+    "friday": {
+      "focus": "review",
+      "tasks": [
+        {
+          "id": "fri-1",
+          "topic": "Review",
+          "description": "Weekly concept review and Q&A",
+          "duration_minutes": 60,
+          "priority": "high",
+          "resources": ["week_summary"]
+        },
+        {
+          "id": "fri-2",
+          "topic": "Review",
+          "description": "Practice problems from all topics",
+          "duration_minutes": 90,
+          "priority": "medium",
+          "resources": ["practice_set"]
+        }
+      ]
+    },
+    "saturday": {
+      "focus": "deep_dive",
+      "tasks": [
+        {
+          "id": "sat-1",
+          "topic": "Advanced Topics",
+          "description": "Explore current research papers",
+          "duration_minutes": 120,
+          "priority": "low",
+          "resources": ["arxiv_papers"]
+        }
+      ]
+    },
+    "sunday": {
+      "focus": "rest",
+      "tasks": [
+        {
+          "id": "sun-1",
+          "topic": "Planning",
+          "description": "Plan next week's learning goals",
+          "duration_minutes": 30,
+          "priority": "medium",
+          "resources": []
+        }
+      ]
+    }
+  },
+  "current_phase": 1,
+  "current_week": 1,
+  "phases": [
+    {
+      "id": 1,
+      "name": "Mathematical Foundations",
+      "weeks": [1, 4],
+      "topics": ["optimization", "probability", "statistics", "linear_algebra"]
+    },
+    {
+      "id": 2,
+      "name": "Machine Learning Fundamentals",
+      "weeks": [5, 10],
+      "topics": ["statistical_learning", "kernel_methods", "graphical_models"]
+    },
+    {
+      "id": 3,
+      "name": "Deep Learning",
+      "weeks": [11, 16],
+      "topics": ["neural_networks", "generative_models", "reinforcement_learning"]
+    },
+    {
+      "id": 4,
+      "name": "Advanced Topics",
+      "weeks": [17, 20],
+      "topics": ["computer_vision", "nlp", "research_topics"]
+    }
+  ]
+}
