@@ -1,0 +1,121 @@
+{
+  "progress_version": "1.0",
+  "user": "learner",
+  "start_date": "2025-11-29",
+  "last_updated": "2025-11-29",
+  "overall_stats": {
+    "total_hours_studied": 0,
+    "total_tasks_completed": 0,
+    "current_streak_days": 0,
+    "longest_streak_days": 0,
+    "average_daily_hours": 0,
+    "completion_rate_percent": 0
+  },
+  "phase_progress": {
+    "phase_1_mathematical_foundations": {
+      "status": "in_progress",
+      "progress_percent": 0,
+      "topics": {
+        "optimization": {
+          "mastery_level": 0,
+          "hours_spent": 0,
+          "tasks_completed": 0,
+          "notes": ""
+        },
+        "probability": {
+          "mastery_level": 0,
+          "hours_spent": 0,
+          "tasks_completed": 0,
+          "notes": ""
+        },
+        "statistics": {
+          "mastery_level": 0,
+          "hours_spent": 0,
+          "tasks_completed": 0,
+          "notes": ""
+        },
+        "linear_algebra": {
+          "mastery_level": 0,
+          "hours_spent": 0,
+          "tasks_completed": 0,
+          "notes": ""
+        }
+      }
+    },
+    "phase_2_ml_fundamentals": {
+      "status": "not_started",
+      "progress_percent": 0,
+      "topics": {
+        "statistical_learning": {
+          "mastery_level": 0,
+          "hours_spent": 0,
+          "tasks_completed": 0,
+          "notes": ""
+        },
+        "kernel_methods": {
+          "mastery_level": 0,
+          "hours_spent": 0,
+          "tasks_completed": 0,
+          "notes": ""
+        },
+        "graphical_models": {
+          "mastery_level": 0,
+          "hours_spent": 0,
+          "tasks_completed": 0,
+          "notes": ""
+        }
+      }
+    },
+    "phase_3_deep_learning": {
+      "status": "not_started",
+      "progress_percent": 0,
+      "topics": {
+        "neural_networks": {
+          "mastery_level": 0,
+          "hours_spent": 0,
+          "tasks_completed": 0,
+          "notes": ""
+        },
+        "generative_models": {
+          "mastery_level": 0,
+          "hours_spent": 0,
+          "tasks_completed": 0,
+          "notes": ""
+        },
+        "reinforcement_learning": {
+          "mastery_level": 0,
+          "hours_spent": 0,
+          "tasks_completed": 0,
+          "notes": ""
+        }
+      }
+    },
+    "phase_4_advanced": {
+      "status": "not_started",
+      "progress_percent": 0,
+      "topics": {
+        "computer_vision": {
+          "mastery_level": 0,
+          "hours_spent": 0,
+          "tasks_completed": 0,
+          "notes": ""
+        },
+        "nlp": {
+          "mastery_level": 0,
+          "hours_spent": 0,
+          "tasks_completed": 0,
+          "notes": ""
+        },
+        "research_topics": {
+          "mastery_level": 0,
+          "hours_spent": 0,
+          "tasks_completed": 0,
+          "notes": ""
+        }
+      }
+    }
+  },
+  "daily_log": [],
+  "weekly_summaries": [],
+  "achievements": []
+}
